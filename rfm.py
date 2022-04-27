@@ -57,6 +57,9 @@ def rfm_df(df):
 
 
 def rfm_pie(rfm_df):
+    '''
+    This function takes in the rfm_df and outputs a pie chart of the segmentation categories.
+    '''
     plt.pie(rfm_df.Agency_Segment.value_counts(),
        labels=rfm_df.Agency_Segment.value_counts().index,
        autopct='%.0f%%')
